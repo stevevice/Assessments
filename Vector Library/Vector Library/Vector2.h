@@ -75,4 +75,7 @@ Vector2<T> operator/(Vector2<T> A, Vector2<T> B)
 	return C;
 }
 
+template<typename T>
+Vector2<T>
+
 #endif // _VECTOR2_H_
