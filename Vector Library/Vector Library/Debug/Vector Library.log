@@ -1,33 +1,17 @@
-﻿Build started 12/1/2015 2:30:02 PM.
+﻿Build started 12/3/2015 5:08:46 PM.
      1>Project "C:\Users\steve.vice\Documents\GitHub\Assessments\Vector Library\Vector Library\Vector Library.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp Vector2.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp Vector2.cpp Vector3.cpp Vector4.cpp
+         Vector4.cpp
          Vector2.cpp
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector2.cpp(2): fatal error C1004: unexpected end-of-file found
+     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector2.h(95): error C2800: 'operator .' cannot be overloaded
          Source.cpp
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(4): error C2988: unrecognizable template declaration/definition
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(4): error C2059: syntax error: ''template<''
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(18): error C2988: unrecognizable template declaration/definition
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(18): error C2143: syntax error: missing ';' before '<'
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(18): error C2059: syntax error: '<'
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(24): error C2588: '::~Vector3': illegal global destructor
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(25): error C2143: syntax error: missing ';' before '{'
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(25): error C2447: '{': missing function header (old-style formal list?)
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(30): error C2988: unrecognizable template declaration/definition
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(30): error C2143: syntax error: missing ';' before '<'
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(30): error C2059: syntax error: '<'
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(42): error C2143: syntax error: missing ';' before '{'
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(42): error C2447: '{': missing function header (old-style formal list?)
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(53): error C2988: unrecognizable template declaration/definition
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(53): error C2143: syntax error: missing ';' before '<'
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(53): error C2059: syntax error: '<'
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(62): error C2143: syntax error: missing ';' before '{'
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(62): error C2447: '{': missing function header (old-style formal list?)
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(72): error C2988: unrecognizable template declaration/definition
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(72): error C2143: syntax error: missing ';' before '<'
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(72): error C2059: syntax error: '<'
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\source.cpp(6): error C2143: syntax error: missing ';' before '{'
-     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\source.cpp(6): error C2447: '{': missing function header (old-style formal list?)
+     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector2.h(95): error C2800: 'operator .' cannot be overloaded
+     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(88): error C2805: binary 'operator |' has too few parameters
+         Generating Code...
+         Compiling...
+         Vector3.cpp
+     1>c:\users\steve.vice\documents\github\assessments\vector library\vector library\vector3.h(88): error C2805: binary 'operator |' has too few parameters
          Generating Code...
      1>Done Building Project "C:\Users\steve.vice\Documents\GitHub\Assessments\Vector Library\Vector Library\Vector Library.vcxproj" (Build target(s)) -- FAILED.
 

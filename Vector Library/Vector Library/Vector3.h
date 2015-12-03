@@ -38,7 +38,7 @@ Vector3<T> operator+(Vector3<T> A, Vector3<T> B)  //Adding Vectors
 } 
 
 template<typename T>
-Vector3<T> operator-(Vector3<T> A) // Giving the Vector 
+Vector3<T> operator-(Vector3<T> A) // Giving the Vector a negative number
 {
 
 	Vector3<T> C;
@@ -50,7 +50,7 @@ Vector3<T> operator-(Vector3<T> A) // Giving the Vector
 }
 
 template<typename T>
-Vector3<T> operator-(Vector3<T> A, Vector3<T> B)
+Vector3<T> operator-(Vector3<T> A, Vector3<T> B) //Subtracting vectors
 {
 	return A + -B;
 
@@ -58,7 +58,7 @@ Vector3<T> operator-(Vector3<T> A, Vector3<T> B)
 }
 
 template<typename T>
-Vector3<T> operator*(Vector3<T> A, Vector3<T> B)
+Vector3<T> operator*(Vector3<T> A, Vector3<T> B) //Multiplying vectors
 {
 	Vector3<T> C;
 	C.X = A.X * B.X;
@@ -69,7 +69,7 @@ Vector3<T> operator*(Vector3<T> A, Vector3<T> B)
 }
 
 template<typename T>
-Vector3<T> operator/(Vector3<T> A, Vector3<T> B)
+Vector3<T> operator/(Vector3<T> A, Vector3<T> B) //Dividing Vectors
 {
 	Vector3<T> C;
 	C.X = A.X / B.X;
@@ -79,6 +79,13 @@ Vector3<T> operator/(Vector3<T> A, Vector3<T> B)
 	return C;
 }
 
+template<typename T>
+Vector3<T> operator|(Vector3<T> A) //Magnitude of vectors
+{
+	int M;
+	M = sqrt((A.X * A.X) + (A.Y * A.Y) + (A.Z * A.Z));
+	return M;
+}
 
 
 #endif // _VECTOR3_H_
