@@ -14,7 +14,9 @@ int main()
 
 	std::cout << A.Magnitude() << std::endl;
 	
-	std::cout << A.Norm().X << ", " << A.Norm().Y << std::endl;
+	Vector2<float> D = A.Norm();
+
+	std::cout << D.X << ", " << A.Norm().X << std::endl;
 
 
 
