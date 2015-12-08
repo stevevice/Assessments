@@ -11,6 +11,9 @@ private:
 public:
 	T X, Y;
 
+	T Magnitude();
+	Vector2<T> Norm();
+
 	Vector2();
 	~Vector2();
 };
@@ -77,19 +80,42 @@ Vector2<T> operator/(Vector2<T> A, Vector2<T> B)
 }
 
 template<typename T>
-Vector3<T> operator|(Vector3<T> A) //Magnitude of vectors
+T Vector2<T>::Magnitude()
 {
-	int M;
-	M = sqrt((A.X * A.X) + (A.Y * A.Y));
-	return M;
-}
+	T Mag;
+	Mag = sqrt((X * X) + (Y * Y));
 
+	return Mag;
+}
 
 template<typename T>
-Vector2<T> operator.(Vector2<T> A, Vector2<T> B)
+Vector2<T> Vector2<T>::Norm()
 {
-	Vector2<T> C;
-	
+	Vector2<T> NormVec;
+	NormVec.X = X / Magnitude();
+	NormVec.Y = Y / Magnitude();
+
+	return NormVec;
 }
+
+template<typename T>
+T Dot(Vector2<T> A, Vector2<T> B) //Vector2<T> Dot (Vector2<T> A, Vector2<T> B) 
+{
+	T DotPr;
+	DotPr = (A.X * B.X) + (A.Y * B.Y);
+
+	return DotPr;
+}
+
+//template<typename T>
+//Vector2<T> operator n(Vector2<T> A, Vector2<T> B)       HOW NOT TO DO OVERLOADED OPERATORS
+//{
+//	Vector2<T> C;
+//	C = A | B;
+//	C.X = C.X
+//	C.Y = sqrt((A.Y * A.Y) + (B.Y * B.Y));
+//
+//	return C;
+//}
 
 #endif // _VECTOR2_H_

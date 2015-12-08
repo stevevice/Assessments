@@ -4,28 +4,24 @@
 
 int main()
 {
-	Vector3<float> A, B, C;
-	A.X = 4;
-	A.Y = 4;
-	A.Z = 4;
-	B.X = 2;
-	B.Y = 1;
-	B.Z = 5;
+	Vector2<float> A, B, C;
+	A.X = 3;
+	A.Y = 3;
+	B.X = 4;
+	B.Y = 4;
 
-	C = A + B;
-	std::cout << C.X << ", " << C.Y << ", " << C.Z << std::endl;
+	std::cout << Dot(A, B) << std::endl;
 
-	C = A - B;
-	std::cout << C.X << ", " << C.Y << ", " << C.Z << std::endl;
+	std::cout << A.Magnitude() << std::endl;
 	
-	C = A * B;
-	std::cout << C.X << ", " << C.Y << ", " << C.Z << std::endl;
+	std::cout << A.Norm().X << ", " << A.Norm().Y << std::endl;
 
-	C = A / B;
-	std::cout << C.X << ", " << C.Y << ", " << C.Z << std::endl;
 
-	C = -B;
-	std::cout << C.X << ", " << C.Y << ", " << C.Z << std::endl;
+
+
+
+
+	
 
 	return 0;
 }
